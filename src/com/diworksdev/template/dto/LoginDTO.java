@@ -31,14 +31,13 @@ public class LoginDTO {
 		this.userName = userName;
 	}
 
-	public boolean isLoginFlg() {
+	public boolean getLoginFlg() {
 		return loginFlg;
 	}
 
 	public void setLoginFlg(boolean loginFlg) {
 		this.loginFlg = loginFlg;
 	}
-	
 	
 
 }
