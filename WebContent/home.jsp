@@ -11,8 +11,7 @@
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <title>HOME画面</title>
-<style type="text/css"
->
+<style type="text/css">
 /* ========TAG LAYOUT======== */
 bogy {
 	margin: 0;
