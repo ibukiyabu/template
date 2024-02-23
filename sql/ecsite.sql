@@ -1,5 +1,5 @@
 set names utf8;
-set forign_key_checks = 0;
+set foreign_key_checks = 0;
 drop database if not exists ecsite;
 use ecsite;
 drop table if exists login_user_transaction;
@@ -25,7 +25,7 @@ create table item_info_transaction
 drop table if exists user_buy_item_transaction;
 create table user_buy_item_transaction
 (
-   id int not null primary key auto increment,
+   id int not null primary key auto_increment,
    item_transaction_id int,
    total_price int,
    total_count int,
