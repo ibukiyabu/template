@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib prefix="s" uri="/struts- tags"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,7 +46,13 @@ table {
 #main {
 	width: 100%;
 	height: 500px;
-	background-color: black clear:both;
+	text-align: center;
+}
+
+#footer{
+width: 100%;
+height: 80px;
+background-color: black clear:both;
 }
 </style>
 </head>
@@ -77,7 +83,7 @@ table {
 
 					<tr>
 						<td><label>ログインPASS:</label></td>
-						<td><input type="text" name="loginUserId" value="" /></td>
+						<td><input type="text" name="loginPassword" value="" /></td>
 					</tr>
 
 					<tr>
