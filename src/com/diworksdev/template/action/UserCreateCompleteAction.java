@@ -3,10 +3,12 @@ package com.diworksdev.template.action;
 import java.sql.SQLException;
 import java.util.Map;
 
+import org.apache.struts2.interceptor.SessionAware;
+
 import com.diworksdev.template.dao.UserCreateCompleteDAO;
 import com.opensymphony.xwork2.ActionSupport;
 
-public class UserCreateCompleteAction extends ActionSupport{
+public class UserCreateCompleteAction extends ActionSupport implements SessionAware{
 	
 	private String loginUserId;
 	private String loginPassword;
@@ -50,7 +52,8 @@ public class UserCreateCompleteAction extends ActionSupport{
 	public Map<String, Object> getSession() {
 		return session;
 	}
-
+	
+	@Override
 	public void setSession(Map<String, Object> session) {
 		this.session = session;
 	}
