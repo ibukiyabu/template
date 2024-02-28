@@ -28,8 +28,8 @@ public class MyPageDAO {
 			if(resultSet.next()) {
 				myPageDTO.setItemName(resultSet.getString("item_name"));
 				myPageDTO.setTotalPrice(resultSet.getString("total_price"));
-				myPageDTO.setTotalPrice(resultSet.getString("total_count"));
-				myPageDTO.setTotalPrice(resultSet.getString("pay"));
+				myPageDTO.setTotalCount(resultSet.getString("total_count"));
+				myPageDTO.setPayment(resultSet.getString("pay"));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -68,7 +68,7 @@ table {
 		</div>
 
 		<div>
-			<s:if test="session.message=''">
+			<s:if test="session.message ==''">
 				<h3>ご購入情報は以下になります。</h3>
 				<table>
 
@@ -79,7 +79,9 @@ table {
 
 					<tr>
 						<td>値段</td>
-						<td><s:property value="session.total_price" /> <span>円</span>
+						<td>
+						<s:property value="session.total_price" />
+						<span>円</span>
 						</td>
 
 					</tr>
@@ -107,8 +109,9 @@ table {
 			</s:if>
 
 			<div>
-				<br> <span>前画面に戻る場合は</span> <a
-					href='<s:url action="HomeAction" />'>ログアウト</a> <span>をお願いします</span>
+				<br> <span>前画面に戻る場合は</span> 
+				<a href='<s:url action="HomeAction" />'>ログアウト</a> 
+				<span>をお願いします</span>
 			</div>
 
 		</div>
